@@ -11,7 +11,7 @@
 
 ## Background
 
-![alt text](image.png)
+![alt text](./images/image.png)
 
 [Corporación Favorita](https://www.corporacionfavorita.com/) is a large grocery retailer based in Ecuador. We offer a variety of products from Automotive to Seafood at locations across the company. After April 2014, product promotions were implemented that coincided with an increase in the already upward sales trend. In light of this, our analysis has explored the extent to which current promotional efforts have been successful in keeping this upward trend. Across these product families, as well as different store types and clusters, I aim to analyze the overall sales trends and the effectiveness of promotions at Favorita.
 
@@ -23,7 +23,7 @@ These insights will be sent to the sales and marketing teams to inform future pr
 
 Corporación Favorita has averaged **215k in yearly sales** and **is growing** at a rate of 24% annually. The number of **total items promoted** is likewise **increasing** by an average annual rate of 140%. Grocery I contributes **the most** in **total average sales** (3,770 units) while Lawn & Garden and School & Office Supplies products have the **strongest relationship** between average sales and promotions. Stores in the category of Type A have by far the **highest average sales per store** (742 units) compared to the next highest, Type B (463 units). Type C has by far the **lowest average sales per store** (256 units), despite being the store type with the second-highest number of total stores (15). Comparing both stores, Type C stores do not promote high-growth products nor non-popular products. <u>Favorita would benefit from</u> a) Type A stores devoting more resources to drastically increasing promotional efforts, b) potentially dropping books from our product lines (-44% drop in sales), and c) strategic timing of promotions for seasonal items.
 
-![alt text](image-10.png)
+![alt text](./images/image-10.png)
 
 ## Data Structure
 
@@ -31,7 +31,7 @@ Corporación Favorita has averaged **215k in yearly sales** and **is growing** a
 - For the `stores` table, each row represents a store identified by `store_nbr` with its city and province (`state`) as well as its group in the `type` and `cluster` columns.
 - Each row of the `transactions` table represents the number of transactions on a given day for a given store.
 
-![alt text](ERD.drawio.svg)
+![alt text](./images/ERD.drawio.svg)
 
 _See `eda.ipynb` file for more information about each variable and in-depth detail on each table._
 
@@ -44,8 +44,8 @@ _See `eda.ipynb` file for more information about each variable and in-depth deta
 - The most dramatic increase in sales was from 2013 to 2014, which seems to be associated with the introduction of promoted items around May 2014, particularly the huge increase (224%) of promoted items in July 2014.
 - The number of total items promoted, similar to sales, is also increasing every year and has an average annual growth rate of 140%.
 
-![alt text](image-2.png)
-![alt text](image-1.png)
+![alt text](./images/image-2.png)
+![alt text](./images/image-1.png)
 
 ### Key Product Family Performance
 
@@ -64,7 +64,7 @@ _See `eda.ipynb` file for more information about each variable and in-depth deta
 - Although the lowest growth rates so far are Frozen Foods (-53%) and Baby Care (-47%), Frozen Foods has enormous growth in December on average (~400%), so this may be expected. This is similar to Baby Care (~81% in December).
 - The product families that have the strongest relationship between sales and promotions are Lawn and Garden and School and Office Supplies, with the latter centering around start of school.
 
-![alt text](image-3.png)
+![alt text](./images/image-3.png)
 
 ### Poor Product Family Performers
 
@@ -73,11 +73,11 @@ _See `eda.ipynb` file for more information about each variable and in-depth deta
 - However, Home Appliances currently have the third highest growth rate so far just halfway into the year (7%).
 - Similarly, there is a slight negative trend in Lingerie sales that seems to be offset by the introduction of more promotions starting November 2016.
 
-![alt text](image-4.png)
+![alt text](./images/image-4.png)
 
 - There were instances where promotions had no relationship with sales, shown especially with Frozen Foods and Celebrations:
 
-![alt text](image-5.png)
+![alt text](./images/image-5.png)
 
 ### Sales by Store Types and Clusters: contributors for success
 
@@ -88,7 +88,7 @@ _See `eda.ipynb` file for more information about each variable and in-depth deta
   - Three out of four of Type C's clusters (15, 3, & 7) do not go above 300 in average sales. Cluster 12 is below 500 in average sales.
   - Even Type E stores, with by far the lowest number of total stores (4), has better average sales (412 units). We compare E, C, and A in the below graph.
 
-![alt text](image-6.png)
+![alt text](./images/image-6.png)
 
 - Looking deeper into what contributes to the highest-performing store type A:
   - Lawn and Garden currently has the highest growth rate (85%) and has the third-highest contribution.
@@ -100,11 +100,11 @@ _See `eda.ipynb` file for more information about each variable and in-depth deta
 
 **Store Type A, the highest in sales:**
 
-![alt text](image-7.png)
+![alt text](./images/image-7.png)
 
 **Store Type C, the lowest in sales:**
 
-![alt text](image-8.png)
+![alt text](./images/image-8.png)
 
 ## Recommendations
 
